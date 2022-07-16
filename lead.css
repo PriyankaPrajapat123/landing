@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --navbar-height: 59px;
+}
+#navbar ul li a {
+    font-size: 1.5rem;
+    padding: 0px 7px;
+    padding-bottom: 5px;
+    margin-top: 12px;
+}
+#navbar {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    padding: 50px;
+}
+#navbar ul {
+    display: flex;
+    align-items: center;
+    font-family: 'Baloo Bhai', cursive;
+}
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+#home {
+    display: flex;
+    flex-direction: column;
+    /*padding: 0.5px 100px;*/
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before {
+    content: "";
+    background: url('./images/marvin-meyer-SYTO3xs06fU-unsplash.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.98;
+}
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Bree serif', serif;
+}
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree serif', serif;
+}
+/* Services section  */
+#services {
+       margin-bottom: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: auto;
+    background-color: rgb(249, 252, 252);
+}
+#services .box {
+   
+    border: 2px solid rgb(241, 212, 212);
+    height: 180px;
+    width: 350px;
+    text-align: center;
+    justify-content: center;
+    padding: 34px;
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+#services p {
+    font-size: 1.2rem;
+    font-family: 'Baloo Bhai', cursive;
+}
+.h-primary {
+    font-size: 2.8rem;
+    padding: 12px;
+    word-spacing: 10px;
+}
+.h-secondary {
+    font-size: 1.8rem;
+    padding: 12px;
+    margin-bottom: 30px;
+    font-family: 'Bree serif', serif;
+}
+.btn {
+    padding: 16px 20px;
+    border: 2px solid white;
+    background-color: rgb(145, 143, 143);
+    color: black;
+    margin: 17px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.btn:hover {
+    background-color: brown;
+}
+.centre {
+    text-align: center;
+}
+.container {
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    padding: 80px;
+    font-family: 'Baloo Bhai', cursive;
+}
+#services-container {
+    background-color: rgb(248, 241, 241);
+}
+#services-container .box {
+    display: flex;
+    background-color: rgb(233, 245, 245);
+}
+#services-container .box img {
+    height: 500px;
+    width: 950px;
+}
+#services-container .text {
+    text-align: center;
+    justify-content: center;
+    padding: 34px;
+}
+#services-container .text .h-secondary {
+    text-align: left;
+    justify-content: left;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+#services-container .text .centre {
+    text-align: left;
+    justify-content: left;
+    margin-bottom: 15x;
+    padding: 15px;
+}
+#services-container .text p {
+    padding: 50px;
+    font-size: 30px;
+}
+#services-container .box1 {
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(243, 245, 245);
+    height: 110px;
+    width: 800px;
+    padding: 0px;
+    margin-top: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.myservices h1 {
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+    font-size: 43px;
+    font-family: 'Baloo Bhai', cursive;
+}
+.myservices p {
+    text-align: center;
+    justify-content: center; 
+}
+.style {
+    padding: 45px;
+}
+.style p {
+    font-size: 30px;
+}
+ .box-part{
+    display: flex;
+
+    flex: 0 1 150px;
+}
+.left-service{
+    column-count: 2;
+    margin-top: 60px;
+}
+ .left-service .box3{
+    border: 2px solid black;
+width: 400px;
+height: 250px;
+text-align: center;
+justify-content: center;
+padding: 30px;
+font-size: 30px;  
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+ }
+  .left-service .box3 h1{
+    font-size: 35px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    font-family: 'Baloo Bhai', cursive;
+  }
+.right-part{
+    flex-basis: 50%;   
+}
+.right-part img{
+    width: 60%;
+    height: 70%;
+    padding: 50px;
+    margin-left: 200px;
+}
+#choose {
+    padding: 300px;
+    display: flex;
+    margin-bottom: 0%;
+}
+#choose .text {
+    padding: 50px;
+}
+#choose .text p {
+    font-size: 30px;
+}
+#choose .text h1 {
+    font-size: 31px;
+}
+#choose img {
+    width: 550px;
+    height: 550px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 80px;
+    margin-top: 70px;
+}
+#choose .text .dark {
+    font-size: 43px;
+    font-family: 'Bree serif', serif;
+}
+#home1 {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+    background: url('./images/p.jpg') no-repeat center center/cover;
+    margin: 0px;
+    opacity: 0.9;
+}
+#home1 h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Bree serif', serif;
+    font-size: 50px;
+}
+#home1 p {
+    color: white;
+    text-align: center;
+    font-family: 'Bree serif', serif;
+    font-size: 35px;
+}
+/*project*/
+#project {
+    padding: 23px;
+    position: relative;
+}
+#project .h-primary {
+    font-family: 'Bree serif', serif;
+    font-size: 45px;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#project {
+    margin-top: 70px;
+    background-color: rgb(235, 233, 231);
+}
+#project p {
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+}
+#home2 img {
+    width: 400px;
+    height: 300px;
+    padding: 10px;
+    margin: 12px;
+    margin-bottom: 0%;
+}
+#home2 {
+    display: grid;
+    grid-template-columns: 410px 310px;
+    justify-content: center;
+}
+.image:hover {
+    opacity: 0.3;
+}
+.footer-dark {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    color: #f0f9ff;
+    background-color: #464849;
+    padding: 50px 0;
+    height: 90px;
+}
+.footer-dark ul {
+    padding: 0;
+    list-style: none;
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 0;
+    column-count: 3;
+}
+.footer-dark h3 {
+    font-family: 'Bree serif', serif;
+    font-size: 35px;
+    margin-bottom: 12px;
+    align-items: center;
+    justify-content: center;
+}
+.footer-dark ul a {
+    color: inherit;
+    text-decoration: none;
+    margin-left: 12PX;
+    opacity: 0.6;
+    font-size: 20px;
+}
+.footer-dark ul a:hover {
+    opacity: 0.8;
+    color: rgb(236, 177, 177);
+}
